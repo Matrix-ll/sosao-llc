@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "toaster": true,
+  "sections": [
+    { "bespoke": "src/components/site/StoreApp.tsx" }
+  ]
+}

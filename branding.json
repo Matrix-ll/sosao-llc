@@ -1,0 +1,9 @@
+{
+  "icon": "ph:flower-lotus-duotone",
+  "primaryColor": "#0B111E",
+  "backgroundColor": "#F3F4F6",
+  "accentColor": "#D4AF37",
+  "heroTitle": "SOSAO LLC",
+  "layoutStyle": "hero",
+  "previewSvg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'><rect width='400' height='240' fill='#0B111E'/><rect x='24' y='24' width='352' height='56' rx='10' fill='none' stroke='#D4AF37' stroke-width='2'/><text x='200' y='64' text-anchor='middle' font-family='Georgia, serif' font-size='26' fill='#E8C66A'>SOSAO LLC</text><rect x='24' y='100' width='112' height='116' rx='8' fill='#0F172A' stroke='#06B6D4'/><rect x='148' y='100' width='112' height='116' rx='8' fill='#0F172A' stroke='#A855F7'/><rect x='272' y='100' width='112' height='116' rx='8' fill='#0F172A' stroke='#D4AF37'/><text x='80' y='164' text-anchor='middle' font-family='Georgia, serif' font-size='30' fill='#06B6D4'>$19</text><text x='204' y='164' text-anchor='middle' font-family='Georgia, serif' font-size='30' fill='#B07AF0'>$49</text><text x='328' y='164' text-anchor='middle' font-family='Georgia, serif' font-size='30' fill='#E8C66A'>$99</text></svg>"
+}

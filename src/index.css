@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * SOSAO LLC — dark luxury wellness tokens.
+ * Deep navy base, metallic gold primary, teal + royal accents.
+ * Every semantic color is an HSL variable consumed by tailwind.config.js.
+ */
+@layer base {
+  :root {
+    --background: 222 47% 8%;
+    --foreground: 38 30% 94%;
+    --card: 222 42% 11%;
+    --card-foreground: 38 30% 94%;
+    --popover: 222 42% 10%;
+    --popover-foreground: 38 30% 94%;
+    --primary: 47 68% 52%;
+    --primary-foreground: 224 40% 10%;
+    --secondary: 188 94% 43%;
+    --secondary-foreground: 224 40% 10%;
+    --muted: 221 32% 15%;
+    --muted-foreground: 219 16% 68%;
+    --accent: 271 91% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 28% 20%;
+    --input: 220 28% 20%;
+    --ring: 47 68% 52%;
+    --radius: 0.625rem;
+    --font-sans: 'Manrope';
+    --font-display: 'Playfair Display';
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 38 30% 94%;
+    --card: 222 42% 11%;
+    --card-foreground: 38 30% 94%;
+    --popover: 222 42% 10%;
+    --popover-foreground: 38 30% 94%;
+    --primary: 47 68% 52%;
+    --primary-foreground: 224 40% 10%;
+    --secondary: 188 94% 43%;
+    --secondary-foreground: 224 40% 10%;
+    --muted: 221 32% 15%;
+    --muted-foreground: 219 16% 68%;
+    --accent: 271 91% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 28% 20%;
+    --input: 220 28% 20%;
+    --ring: 47 68% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
