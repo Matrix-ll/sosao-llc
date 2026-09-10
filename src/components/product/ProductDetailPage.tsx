@@ -15,7 +15,7 @@ import { getProductBySlug } from '@/data/products'
 export function ProductDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const product = slug ? getProductBySlug(slug) : undefined
-  const { addItem } = useCart()
+  const { addItem, setOpen } = useCart()
 
   if (!product) {
     return (
@@ -111,16 +111,13 @@ export function ProductDetailPage() {
                 Add to Cart
               </Button>
               <Button
-                asChild
-                className="rounded-full bg-secondary px-8 text-secondary-foreground hover:bg-secondary/80"
+                onClick={() => {
+                  addItem(product)
+                  setOpen(true)
+                }}
+                className="rounded-full bg-primary px-8 font-semibold text-primary-foreground hover:bg-primary/90"
               >
-                <a
-                  href={product.stripeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Buy Now
-                </a>
+                Buy Now
               </Button>
             </div>
             <p className="mt-4 text-xs leading-relaxed text-muted-foreground">

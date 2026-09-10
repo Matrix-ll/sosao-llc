@@ -11,7 +11,6 @@ export interface Product {
   description: string
   benefits: [string, string, string]
   image: string
-  stripeUrl: string
 }
 
 export interface Plan {

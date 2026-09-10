@@ -95,17 +95,16 @@ export function CartDrawer() {
                   </div>
                   <div className="flex shrink-0 flex-col items-center gap-1.5">
                     <Button
-                      asChild
                       size="sm"
+                      onClick={() => {
+                        setOpen(false)
+                        toast.info(
+                          `PayPal checkout for ${product.name} is being connected. Card and PayPal payment will be available here shortly.`
+                        )
+                      }}
                       className="h-7 rounded-full bg-secondary px-3 text-xs text-secondary-foreground hover:bg-secondary/80"
                     >
-                      <a
-                        href={product.stripeUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Buy
-                      </a>
+                      Buy
                     </Button>
                     <Button
                       size="icon"
@@ -163,30 +162,14 @@ export function CartDrawer() {
                   Clear
                 </Button>
                 <Button
-                  asChild
-                  disabled={!agreed}
+                  onClick={() => {
+                    toast.info(
+                      'PayPal checkout is being connected. Card and PayPal payment will be available here shortly.'
+                    )
+                  }}
                   className="flex-1 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-50"
                 >
-                  {items.length === 1 ? (
-                    <a
-                      href={items[0].product.stripeUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Checkout
-                    </a>
-                  ) : (
-                    <button
-                      type="button"
-                      onClick={() =>
-                        toast.info(
-                          'Each program has its own secure checkout. Use the Buy button on each item to pay separately.'
-                        )
-                      }
-                    >
-                      Checkout
-                    </button>
-                  )}
+                  Checkout
                 </Button>
               </div>
             </div>

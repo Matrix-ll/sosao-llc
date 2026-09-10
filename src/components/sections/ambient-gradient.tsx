@@ -1,7 +1,7 @@
 /**
  * Section substrate: AmbientGradient — slow-drifting shader-gradient layer.
  *
- * A "Stripe-style" ambient color field rendered by a tiny WebGL fragment
+ * A soft ambient color field rendered by a tiny WebGL fragment
  * shader from the site's own brand tokens (--primary, --accent,
  * --background — resolved at mount, so it follows the theme). Compose
  * it as a background layer inside any `relative isolate` section:
